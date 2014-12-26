@@ -1,0 +1,118 @@
+// Module (so no Scope)
+
+.jobs-wrapper
+{
+	background:#fff;
+	border-radius:5px;
+	box-shadow:0 1px 1px rgba(0,0,0,0.2);
+	margin-bottom:1em;
+	
+	ul
+	{
+		margin:0;
+		padding:0;
+		list-style:none;
+		
+		.job
+		{
+			
+			&:first-child a
+			{
+				border-radius:5px 5px 0 0;
+			}
+				
+			&:last-child a
+			{
+				border-bottom:none;
+				border-radius:0 0 5px 5px;
+			}
+				
+			a
+			{	
+				display:block;
+				padding:1em;
+				border-bottom:1px solid #d6d6d6;
+				transition:all 0.1s linear;
+				
+				&:hover, &:focus
+				{
+					outline:none;
+					background:#FFFFED;
+				}
+			
+			}
+			
+			.date
+			{
+				color:#555;
+				font-size:0.8em;
+			}
+			
+			h3
+			{
+				font-family:'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+				color:#222;
+				font-size:1.2em;
+				margin:0.2em 0;
+			}
+			
+			p
+			{
+				color:#555;
+				margin:0;
+			}
+			
+			.tags-wrapper
+			{
+				margin:0.5em 0 0;
+				
+				.tag
+				{
+					background:@co_third;
+					padding:0.3em 0.9em;
+					color:#528536;
+					display:inline-block;
+					margin:0 0.1em;
+					font-size:0.8em;
+					border-radius:20em;
+				}
+				
+			}
+			
+			.budget-wrapper
+			{
+				border:1px solid @co_second;
+				border-radius:2px;
+				text-align:center;
+				padding:0.7em 0.4em;
+				color:@co_second;
+				
+				span
+				{
+					font-size:0.8em;
+					margin-bottom:0.7em;
+					display:inline-block;
+				}
+				
+				.budget
+				{
+					font-weight:bold;
+					font-size:1.1em;
+				}
+				
+			}
+			
+			.type
+			{
+				font-size:1.1em;
+				color:#0f1b33;
+				font-weight:bold;
+				margin:1.2em 0 0;
+				text-align:center;
+			}
+			
+		}
+		
+	}
+	
+}

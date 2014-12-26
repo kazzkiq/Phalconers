@@ -1,0 +1,74 @@
+// Scope
+.app-header
+{
+	background:url('../img/bg-landingpage.svg') no-repeat top center, linear-gradient(130deg, #0f1b33 0%, #32548c 120%);
+	background-size:110% auto;
+	background-blend-mode:overlay;
+		
+	position:fixed;
+	z-index:5;
+	padding:2em 0 0;
+	top:0;
+	left:0;
+	width:100vw;
+	
+	.container
+	{
+		border-bottom:1px solid rgba(255,255,255,0.3);
+		padding-bottom:2em;
+		position:relative;
+	}
+	
+	.logo-wrapper
+	{
+		position:absolute;
+		left:0;
+		top:0;
+		padding-right:2em;
+		margin-right:2em;
+		display:inline-block;
+		border-right:1px solid rgba(255,255,255,0.3);
+	}
+	
+	.menu
+	{
+		margin-left:160px;
+		color:#fff;
+	}
+	
+	.menu ul
+	{
+		float:left;
+		margin:0;
+		padding:0;
+		list-style:none;
+		transform:translateY(1px);
+	}
+	
+	.menu ul li
+	{
+		font-size:0.9em;
+		font-weight:normal;
+		padding:0 1em;
+		text-transform:uppercase;
+		display:inline-block;
+	}
+	
+	.menu ul li:first-child
+	{
+		padding-left:0;
+	}
+	
+	.end
+	{
+		text-transform:none;
+		float:right;
+		
+		span
+		{
+			color:@co_landing_txt_blue;
+		}
+		
+	}
+	
+}

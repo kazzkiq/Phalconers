@@ -1,9 +1,9 @@
 <?php
 
-class IndexController extends ControllerBase
+class PhalconController extends \Phalcon\Mvc\Controller
 {
-	
-	public function onConstruct()
+
+    public function onConstruct()
 	{
 		define('BASEPATH', 'Phalconers/project/');
 	}
