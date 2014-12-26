@@ -8,7 +8,7 @@
 			<?php echo $this->tag->linkTo(array('index', 'Post a job offer', 'class' => 'main-btn')); ?>
 			
 			<ul class="mini-links">
-				<li><?php echo $this->tag->linkTo(array('index', 'What is Phalcon')); ?></li>
+				<li><?php echo $this->tag->linkTo(array('what-is-phalcon', 'What is Phalcon')); ?></li>
 				<li><?php echo $this->tag->linkTo(array('index', 'Post a Job offer')); ?></li>
 				<li><?php echo $this->tag->linkTo(array('index', 'Find Jobs')); ?></li>
 				<li><?php echo $this->tag->linkTo(array('index', 'Create an Account')); ?></li>

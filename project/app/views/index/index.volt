@@ -8,7 +8,7 @@
 			{{ link_to('index','Post a job offer', 'class': 'main-btn') }}
 			
 			<ul class="mini-links">
-				<li>{{ link_to('index','What is Phalcon') }}</li>
+				<li>{{ link_to('what-is-phalcon','What is Phalcon') }}</li>
 				<li>{{ link_to('index','Post a Job offer') }}</li>
 				<li>{{ link_to('index','Find Jobs') }}</li>
 				<li>{{ link_to('index','Create an Account') }}</li>

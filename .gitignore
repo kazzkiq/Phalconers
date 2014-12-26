@@ -1,1 +1,5 @@
 node_modules/
+project/app/cache/**
+project/public/css/**
+project/public/js/**
+project/public/temp/**
