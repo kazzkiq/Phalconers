@@ -4,14 +4,40 @@
 	margin-top:2em;
 	border-top:1px solid #c9caca;
 	padding:2em 0;
+	background:@co_gray;
+	box-shadow:0 -2em 0 @co_gray;
+	position:relative;
+	z-index:2;
 	
 	.logo-wrapper
 	{
-		
+		float:left;	
 		img
 		{
 			display:block;
 			margin-bottom:5px;
+		}
+		
+	}
+	
+	.menu
+	{
+		list-style:none;
+		margin:10px 0 0 0;
+		padding:0;
+		float:right;
+		
+		li
+		{
+			margin:0 1em;
+			color:#222;
+			float:left;
+			
+			&:hover
+			{
+				color:lighten(#222,40%);
+			}
+			
 		}
 		
 	}

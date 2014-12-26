@@ -10,4 +10,16 @@ $loader->registerDirs(
         $config->application->controllersDir,
         $config->application->modelsDir
     )
-)->register();
+);
+
+
+/**
+ * Registering classes from library
+ */
+$loader->registerClasses(
+    array(
+        "Bcrypt" => "../app/library/classes/class.Bcrypt.php"
+    )
+);
+
+$loader->register();
