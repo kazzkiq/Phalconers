@@ -26,9 +26,13 @@
 						<li>{{ link_to('about', 'About') }}</li>
 					</ul>
 					<div class="end">
+						{% if isLogged === false %}
 						{{ link_to('signup', 'Sign up') }}
 						<span>or</span>
 						{{ link_to('login', 'Log in') }}
+						{% else %}
+						Hey, {{employer.name}}. {{ link_to('logout', 'Logout') }}
+						{% endif %}
 					</div>
 				</nav>
 			</div>

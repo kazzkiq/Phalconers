@@ -26,9 +26,13 @@
 						<li><?php echo $this->tag->linkTo(array('about', 'About')); ?></li>
 					</ul>
 					<div class="end">
+						<?php if ($isLogged === false) { ?>
 						<?php echo $this->tag->linkTo(array('signup', 'Sign up')); ?>
 						<span>or</span>
 						<?php echo $this->tag->linkTo(array('login', 'Log in')); ?>
+						<?php } else { ?>
+						Hey, <?php echo $employer->name; ?>. <?php echo $this->tag->linkTo(array('logout', 'Logout')); ?>
+						<?php } ?>
 					</div>
 				</nav>
 			</div>

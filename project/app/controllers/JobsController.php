@@ -1,6 +1,6 @@
 <?php
 
-class JobsController extends \Phalcon\Mvc\Controller
+class JobsController extends ControllerBase
 {
 
     public function indexAction()

@@ -18,7 +18,8 @@ $loader->registerDirs(
  */
 $loader->registerClasses(
     array(
-        "Bcrypt" => "../app/library/classes/class.Bcrypt.php"
+        "Bcrypt" => "../app/library/classes/class.Bcrypt.php",
+        "ChromePhp" => "../app/library/classes/class.ChromePhp.php"
     )
 );
 

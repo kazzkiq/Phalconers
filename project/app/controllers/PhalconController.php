@@ -1,6 +1,6 @@
 <?php
 
-class PhalconController extends \Phalcon\Mvc\Controller
+class PhalconController extends ControllerBase
 {
 
     public function onConstruct()

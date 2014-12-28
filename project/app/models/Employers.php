@@ -87,14 +87,11 @@ class Employers extends \Phalcon\Mvc\Model
     public function exists($email, $pass)
     {
 	    
-	    $matchEmail = self::query()
-	    	->where('mail = :email:')
-	    	->bind(['email', $email])
-	    	->execute();
-	    	
-	    $hashPass = $matchEmail[0]->password;
+	    $matchEmail = $this->findFirst(["email = :email:", "bind" => ["email" => $email]]);
 	    
-	    if($matchEmail[0] !== false)
+	    $hashPass = $matchEmail->password;
+	    
+	    if(!!$matchEmail)
 	    {
 		    $matchPassword = Bcrypt::check($pass, $hashPass);
 		    if($matchPassword)
@@ -104,6 +101,20 @@ class Employers extends \Phalcon\Mvc\Model
 		    {
 			    return false;
 		    }
+	    }else
+	    {
+		    return false;
+	    }
+	    
+    }
+    
+    public function getCurrent($email)
+    {
+	    $hasEmployer = $this->findFirst(["email = :email:", "bind" => ["email" => $email]]);
+	    
+	    if(!!$hasEmployer)
+	    {
+		    return $hasEmployer;
 	    }else
 	    {
 		    return false;

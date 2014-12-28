@@ -1,6 +1,6 @@
 <?php
 
-class LegalController extends \Phalcon\Mvc\Controller
+class LegalController extends ControllerBase
 {
 
 	public function indexAction()

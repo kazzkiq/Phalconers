@@ -11,6 +11,22 @@ $router->add(
     )
 );
 
+$router->add(
+    "/auth/try-login",
+    array(
+        "controller" => "auth",
+        "action"     => "login"
+    )
+);
+
+$router->add(
+    "/logout",
+    array(
+        "controller" => "auth",
+        "action"     => "logout"
+    )
+);
+
 $router->removeExtraSlashes(true);
 
 return $router;

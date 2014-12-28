@@ -3,7 +3,7 @@
 return new \Phalcon\Config(array(
     'database' => array(
         'adapter'     => 'Mysql',
-        'host'        => 'localhost',
+        'host'        => '0.0.0.0',
         'username'    => 'root',
         'password'    => '',
         'dbname'      => 'phalconers',
